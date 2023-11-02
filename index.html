@@ -1,0 +1,596 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>휴(HEW) 관리 페이지</title>
+    <link rel="icon" type="image/x-icon" href="https://r2.order-app.workers.dev/profile/4e4729d2841b4e7099492a5bab4eccc055.png">
+    <link href="https://euro.order-app.us/static/layouts/vertical-light-menu/css/light/loader.css" rel="stylesheet" type="text/css">
+    <link href="https://euro.order-app.us/static/layouts/vertical-light-menu/css/dark/loader.css" rel="stylesheet" type="text/css">
+    <script src="https://euro.order-app.us/static/layouts/vertical-light-menu/loader.js"></script>
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+    <link href="https://euro.order-app.us/static/src/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="https://euro.order-app.us/static/layouts/vertical-light-menu/css/light/plugins.css" rel="stylesheet" type="text/css">
+    <link href="https://euro.order-app.us/static/layouts/vertical-light-menu/css/dark/plugins.css" rel="stylesheet" type="text/css">
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+    <link href="https://euro.order-app.us/static/src/plugins/src/apex/apexcharts.css" rel="stylesheet" type="text/css">
+    <link href="https://euro.order-app.us/static/src/assets/css/light/dashboard/dash_1.css" rel="stylesheet" type="text/css">
+    <link href="https://euro.order-app.us/static/src/assets/css/dark/dashboard/dash_1.css" rel="stylesheet" type="text/css">
+    <!-- END PAGE LEVEL PLUGINS/CUSTOM STYLES -->
+
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <link href="https://euro.order-app.us/static/src/plugins/src/animate/animate.css" rel="stylesheet" type="text/css">
+    <!-- END PAGE LEVEL PLUGINS -->
+
+    <!-- BEGIN THEME GLOBAL STYLES -->
+    <link href="https://euro.order-app.us/static/src/plugins/src/flatpickr/flatpickr.css" rel="stylesheet" type="text/css">
+    <link href="https://euro.order-app.us/static/src/plugins/src/noUiSlider/nouislider.min.css" rel="stylesheet" type="text/css">
+    <!-- END THEME GLOBAL STYLES -->
+            
+    <!--  BEGIN CUSTOM STYLE FILE  -->
+    <link href="https://euro.order-app.us/static/src/assets/css/light/components/carousel.css" rel="stylesheet" type="text/css">
+    <link href="https://euro.order-app.us/static/src/assets/css/light/components/modal.css" rel="stylesheet" type="text/css">
+    <link href="https://euro.order-app.us/static/src/assets/css/light/components/tabs.css" rel="stylesheet" type="text/css">
+    <link href="https://euro.order-app.us/static/src/plugins/css/light/flatpickr/custom-flatpickr.css" rel="stylesheet" type="text/css">
+    
+    <link href="https://euro.order-app.us/static/src/assets/css/dark/components/carousel.css" rel="stylesheet" type="text/css">
+    <link href="https://euro.order-app.us/static/src/assets/css/dark/components/modal.css" rel="stylesheet" type="text/css">
+    <link href="https://euro.order-app.us/static/src/assets/css/dark/components/tabs.css" rel="stylesheet" type="text/css">
+    <link href="https://euro.order-app.us/static/src/plugins/css/dark/flatpickr/custom-flatpickr.css" rel="stylesheet" type="text/css">
+    <!--  END CUSTOM STYLE FILE  -->        
+
+    <!-- BEGIN PAGE LEVEL STYLES -->
+    <link rel="stylesheet" type="text/css" href="https://euro.order-app.us/static/src/plugins/src/table/datatable/datatables.css">
+
+    <link rel="stylesheet" type="text/css" href="https://euro.order-app.us/static/src/plugins/css/light/table/datatable/dt-global_style.css">
+    <link rel="stylesheet" type="text/css" href="https://euro.order-app.us/static/src/plugins/css/dark/table/datatable/dt-global_style.css">
+    <!-- END PAGE LEVEL STYLES -->        
+    <link rel="stylesheet" type="text/css" href="https://euro.order-app.us/static/src/assets/css/light/forms/switches.css">
+    <link rel="stylesheet" type="text/css" href="https://euro.order-app.us/static/src/assets/css/dark/forms/switches.css">
+
+
+</head>
+<body class="" layout="full-width">
+    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <script src="https://euro.order-app.us/static/src/plugins/src/global/vendors.min.js"></script>
+    <script src="https://euro.order-app.us/static/src/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://euro.order-app.us/static/src/plugins/src/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="https://euro.order-app.us/static/src/plugins/src/mousetrap/mousetrap.min.js"></script>
+    <!-- END GLOBAL MANDATORY SCRIPTS -->
+
+    <!-- BEGIN LOADER -->
+    
+    <!--  END LOADER -->
+
+    <!--  BEGIN NAVBAR  -->
+    <div class="header-container">
+        <header class="header navbar navbar-expand-sm">
+            <a href="javascript:void(0);" class="sidebarCollapse">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </a>
+
+            <ul class="navbar-item flex-row ms-lg-auto ms-0">
+                <li class="nav-item theme-toggle-item">
+                    <a href="javascript:void(0);" class="nav-link theme-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon dark-mode"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun light-mode"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    </a>
+                </li>
+                <li class="nav-item dropdown notification-dropdown">
+                    <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="notificationDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg><!--<span class="badge badge-success"></span>-->
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown user-profile-dropdown  order-lg-0 order-1">
+                    <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="avatar-container">
+                            <div class="avatar avatar-sm avatar-indicators avatar-online">
+                                
+                                <img alt="avatar" src="https://r2.order-app.workers.dev/profile/4e4729d2841b4e7099492a5bab4eccc055.png" class="rounded-circle">
+                                
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="dropdown-menu position-absolute" aria-labelledby="userProfileDropdown">
+                        <div class="user-profile-section">
+                            <div class="media mx-auto">
+                                <div class="media-body">
+                                    <h5>휴(HEW)</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="/profile">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> <span>프로필</span>
+                            </a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="#" onclick="return onLogoutButton();">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg> <span>로그아웃</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </li>
+            </ul>
+        </header>
+    </div>
+    <!--  END NAVBAR  -->
+    
+<!--  BEGIN MAIN CONTAINER  -->
+<link href="https://euro.order-app.us/static/assets/css/receipt.css?v=2302020002" rel="stylesheet" type="text/css">
+
+<div class="main-container" id="container">
+
+<div class="overlay"></div>
+<div class="search-overlay"></div>
+
+<!--  BEGIN SIDEBAR  -->
+<div class="sidebar-wrapper sidebar-theme">
+    <nav id="sidebar">
+        <div class="navbar-nav theme-brand flex-row  text-center">
+            <div class="nav-logo">
+                <div class="nav-item theme-logo">
+                    <a href="/">
+                        <img src="https://r2.order-app.workers.dev/profile/4e4729d2841b4e7099492a5bab4eccc055.png">
+                    </a>
+                </div>
+            </div>
+            <div class="nav-item sidebar-toggle">
+                <div class="nav-logo">
+                    <div class="btn-toggle sidebarCollapse">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-left"><polyline points="11 17 6 12 11 7"></polyline><polyline points="18 17 13 12 18 7"></polyline></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="shadow-bottom"></div> -->
+        <div class="navbar-nav theme-brand flex-row text-center">
+            <div class="nav-item theme-text">
+                <a href="/" class="nav-link">휴(HEW)</a>
+            </div>
+        </div>
+        <ul class="list-unstyled menu-categories ps ps--active-y" id="accordionExample">
+            <li class="menu menu-heading">
+                <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg><span>DASHBOARD</span></div>
+            </li>
+            <li class="menu">
+                <a href="/" aria-expanded="false" class="dropdown-toggle">
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                        <span>Dashboard</span>
+                    </div>
+                </a>
+            </li>
+            <li class="menu menu-heading">
+                <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg><span>정보</span></div>
+            </li>
+            <li class="menu">
+                <a href="#board" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                        <span>정보 게시판</span>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                </a>
+                <ul class="collapse submenu list-unstyled" id="board" data-bs-parent="#accordionExample">
+                    <li>
+                        <a href="/notice">공지사항</a>
+                    </li>
+                </ul>
+            </li>                
+            <li class="menu menu-heading">
+                <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg><span>매장</span></div>
+            </li>
+            
+            <li class="menu active">
+                <a href="#sales" data-bs-toggle="collapse" aria-expanded="true" class="dropdown-toggle">
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                        <span>매출조회</span>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                </a>
+                <ul class="collapse submenu list-unstyled show" id="sales" data-bs-parent="#accordionExample">
+                    <li class="active">
+                        <a href="/days"> 일자별 매출 </a>
+                    </li>
+                    <li>
+                        <a href="/product"> 상품별 매출 </a>
+                    </li>
+                </ul>
+            </li>
+                            
+            <li class="menu">
+                <a href="/devices" aria-expanded="false" class="dropdown-toggle">
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-smartphone"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                        <span>등록기기</span>
+                    </div>
+                </a>
+            </li>
+            <li class="menu">
+                <a href="#coffee" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-coffee"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+                        <span>상품관리</span>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                </a>
+                <ul class="collapse submenu list-unstyled" id="coffee" data-bs-parent="#accordionExample">
+                    <li>
+                        <a href="/menu/category">카테고리</a>
+                    </li>
+                    <li>
+                        <a href="/menu">메뉴</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li class="menu">
+                <a href="/adein" aria-expanded="false" class="dropdown-toggle">
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download-cloud"><polyline points="8 17 12 21 16 17"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"></path></svg>
+                        <span>애드인 기능(유료)</span>
+                    </div>
+                </a>
+            </li>
+            
+            <li class="menu menu-heading">
+                <div class="heading"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg><span>사용자 정보</span></div>
+            </li>
+            <li class="menu">
+                <a href="#profile" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                        <span>사용자</span>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                </a>
+                <ul class="collapse submenu list-unstyled" id="profile" data-bs-parent="#accordionExample">
+                    <li>
+                        <a href="/profile">프로필</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu">
+                <a href="#" aria-expanded="false" class="dropdown-toggle" onclick="return onLogoutButton();">
+                    <div class="" style="color: #e7515a;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e7515a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                        <span>로그아웃</span>
+                    </div>
+                </a>
+            </li>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        <div class="ps__rail-x" style="left: 0px; bottom: -253px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 253px; height: 632px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 316px; height: 300px;"></div></div></ul>
+    </nav>
+</div>
+<!--  END SIDEBAR  -->
+
+<!--  BEGIN CONTENT AREA  -->
+<div id="content" class="main-content">
+    <div class="layout-px-spacing">
+        <div class="middle-content p-0">
+            <!-- BREADCRUMB -->
+            <div class="page-meta">
+                <nav class="breadcrumb-style-one" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">매출조회</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">일자별 매출</li>
+                    </ol>
+                </nav>
+            </div>
+            <!-- /BREADCRUMB -->
+            <div class="row layout-top-spacing">
+                <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
+                    <div class="widget-content widget-content-area br-8">
+                        <div class="widget widget-card-four">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="text-forms text-end icon-container">
+                                        <button class="btn btn-secondary" onclick="return OnExportCSV();">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                                        </button>
+                                    </div>
+                                    <div class="form-check form-check-secondary form-check-inline">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radio_to_day" checked="">
+                                        <label class="form-check-label" for="form-check-radio-secondary">
+                                            당일
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-secondary form-check-inline">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radio_day_before">
+                                        <label class="form-check-label" for="form-check-radio-secondary">
+                                            전일
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-secondary form-check-inline">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radio_a_week_ago">
+                                        <label class="form-check-label" for="form-check-radio-secondary">
+                                            1주일
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-secondary form-check-inline">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radio_this_month">
+                                        <label class="form-check-label" for="form-check-radio-secondary">
+                                            당월
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-secondary form-check-inline">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radio_last_month">
+                                        <label class="form-check-label" for="form-check-radio-secondary">
+                                            전월
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-secondary form-check-inline">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radio_this_year">
+                                        <label class="form-check-label" for="form-check-radio-secondary">
+                                            금년
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-secondary form-check-inline">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="radio_last_year">
+                                        <label class="form-check-label" for="form-check-radio-secondary">
+                                            전년
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-xl-8 col-lg-10 col-sm-12">
+                                    <div class="input-group mb-3">
+                                        <input autocomplete="off" type="text" class="form-control flatpickr flatpickr-input active" id="search_start_date" placeholder="시작 일자" readonly="readonly">
+                                        <input autocomplete="off" type="text" class="form-control flatpickr flatpickr-input active" id="search_end_date" placeholder="끝 일자" readonly="readonly">
+                                        <button class="btn btn-secondary" id="search_button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="text-forms col-3" id="today_product_money">오늘 : 52,400원</div>
+                                    <div class="text-forms col-3" id="yesterday_product_money">어제 : 125,600원</div>
+                                    <div class="text-forms col-3" id="month_product_money">이번달 : 178,000원</div>
+                                    <div class="text-forms col-3" id="year_product_money">올해 : 3,562,200원</div>
+                                    <div class="text-forms col-3" id="all_product_money">전체 : 52,400원</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 layout-spacing">
+                                <div class="widget-four">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="widget-heading">
+                                                <h5 class="">전체</h5>
+                                            </div>
+                                            <div class="widget-content">
+                                                <h4 class="" id="all_drink_count">총 판매량 : 19</h4>
+                                                <h4 class="" id="all_cold_drink_count">차가운 음료 : 11잔</h4>
+                                                <h4 class="" id="all_hot_drink_count">따뜻한 음료 : 8잔</h4>
+                                                <h4 class="" id="all_other_count">기타 : 0</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 layout-spacing">
+                                <div class="widget-four">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="widget-heading">
+                                                <h5 class="">유료 판매</h5>
+                                            </div>
+                                            <div class="widget-content">
+                                                <h4 class="" id="paid_drink_count">총 판매량 : 18</h4>
+                                                <h4 class="" id="paid_cold_drink_count">차가운 음료 : 10잔</h4>
+                                                <h4 class="" id="paid_hot_drink_count">따뜻한 음료 : 8잔</h4>
+                                                <h4 class="" id="paid_other_count">기타 : 0</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 layout-spacing">
+                                <div class="widget-four">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="widget-heading">
+                                                <h5 class="">무료 판매</h5>
+                                            </div>
+                                            <div class="widget-content">
+                                                <h4 class="" id="free_drink_count">총 판매량 : 1</h4>
+                                                <h4 class="" id="free_cold_drink_count">차가운 음료 : 1잔</h4>
+                                                <h4 class="" id="free_hot_drink_count">따뜻한 음료 : 0잔</h4>
+                                                <h4 class="" id="free_other_count">기타 : 0</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="branch-config_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4"><div class="table-responsive"><table id="branch-config" class="table table-striped dt-table-hover dataTable" style="width: 100%;" role="grid" aria-describedby="branch-config_info">
+                            <thead>
+                                <tr role="row"><th class="text-center sorting_desc" data-orderable="false" rowspan="1" colspan="1" style="width: 10px;" aria-label="#">#</th><th class="text-center sorting_disabled" data-orderable="false" rowspan="1" colspan="1" style="width: 62px;" aria-label="매장">매장</th><th class="text-center sorting_disabled" data-orderable="false" rowspan="1" colspan="1" style="width: 67px;" aria-label="기기">기기</th><th class="text-center sorting_disabled" data-orderable="false" rowspan="1" colspan="1" style="width: 159px;" aria-label="일자">일자</th><th class="text-center sorting_disabled" data-orderable="false" rowspan="1" colspan="1" style="width: 65px;" aria-label="결제">결제</th><th class="text-center sorting_disabled" data-orderable="false" rowspan="1" colspan="1" style="width: 197px;" aria-label="매출 상품">매출 상품</th><th class="text-center sorting_disabled" data-orderable="false" rowspan="1" colspan="1" style="width: 75px;" aria-label="실 결제 금액">실 결제 금액</th><th class="text-center sorting_disabled" data-orderable="false" rowspan="1" colspan="1" style="width: 86px;" aria-label="상태">상태</th></tr>
+                            </thead>
+                            <tbody>
+                            <tr role="row"><td class="sorting_1"><div class="text-center">11</div></td><td><div class="text-center">휴(HEW)</div></td><td><div class="text-center">ecm0100</div></td><td><div class="text-center">2023-11-02 12:05:50</div></td><td><div class="text-center"><div class="text-center"><span class="badge outline-badge-info mb-2 me-4">카드</span></div></div></td><td><div class="text-center">아이스 초코</div></td><td><div class="text-center">3,000원</div></td><td><div class="text-center"><span class="badge badge-info mb-2 me-4">구입완료</span></div></td></tr><tr role="row"><td class="sorting_1"><div class="text-center">10</div></td><td><div class="text-center">휴(HEW)</div></td><td><div class="text-center">ecm0100</div></td><td><div class="text-center">2023-11-01 11:48:49</div></td><td><div class="text-center"><div class="text-center"><span class="badge outline-badge-info mb-2 me-4">카드</span></div></div></td><td><div class="text-center">아이스바나나 초콜릿라떼 +1</div></td><td><div class="text-center">6,900원</div></td><td><div class="text-center"><span class="badge badge-info mb-2 me-4">구입완료</span></div></td></tr><tr role="row"><td class="sorting_1"><div class="text-center">9</div></td><td><div class="text-center">휴(HEW)</div></td><td><div class="text-center">ecm0100</div></td><td><div class="text-center">2023-11-01 11:09:04</div></td><td><div class="text-center"><div class="text-center"><span class="badge outline-badge-info mb-2 me-4">카드</span></div></div></td><td><div class="text-center">아이스바나나 초콜릿라떼 +1</div></td><td><div class="text-center">6,900원</div></td><td><div class="text-center"><span class="badge badge-info mb-2 me-4">구입완료</span></div></td></tr><tr role="row"><td class="sorting_1"><div class="text-center">8</div></td><td><div class="text-center">휴(HEW)</div></td><td><div class="text-center">ecm0100</div></td><td><div class="text-center">2023-11-01 10:39:38</div></td><td><div class="text-center"><div class="text-center"><span class="badge outline-badge-secondary mb-2 me-4">무료</span></div></div></td><td><div class="text-center">딸기라떼</div></td><td><div class="text-center">0원</div></td><td><div class="text-center"><span class="badge badge-secondary mb-2 me-4">무료추출</span></div></td></tr><tr role="row"><td class="sorting_1"><div class="text-center">7</div></td><td><div class="text-center">휴(HEW)</div></td><td><div class="text-center">ecm0100</div></td><td><div class="text-center">2023-11-01 10:18:24</div></td><td><div class="text-center"><div class="text-center"><span class="badge outline-badge-info mb-2 me-4">카드</span></div></div></td><td><div class="text-center">진한아이스 아메리카노(더블)</div></td><td><div class="text-center">2,800원</div></td><td><div class="text-center"><span class="badge badge-info mb-2 me-4">구입완료</span></div></td></tr><tr role="row"><td class="sorting_1"><div class="text-center">6</div></td><td><div class="text-center">휴(HEW)</div></td><td><div class="text-center">ecm0100</div></td><td><div class="text-center">2023-11-01 10:16:10</div></td><td><div class="text-center"><div class="text-center"><span class="badge outline-badge-info mb-2 me-4">카드</span></div></div></td><td><div class="text-center">진한 아메리카노(더블)</div></td><td><div class="text-center">2,500원</div></td><td><div class="text-center"><span class="badge badge-info mb-2 me-4">구입완료</span></div></td></tr><tr role="row"><td class="sorting_1"><div class="text-center">5</div></td><td><div class="text-center">휴(HEW)</div></td><td><div class="text-center">ecm0100</div></td><td><div class="text-center">2023-11-01 10:01:42</div></td><td><div class="text-center"><div class="text-center"><span class="badge outline-badge-info mb-2 me-4">카드</span></div></div></td><td><div class="text-center">아이스 카페라떼 +1</div></td><td><div class="text-center">6,000원</div></td><td><div class="text-center"><span class="badge badge-info mb-2 me-4">구입완료</span></div></td></tr><tr role="row"><td class="sorting_1"><div class="text-center">4</div></td><td><div class="text-center">휴(HEW)</div></td><td><div class="text-center">ecm0100</div></td><td><div class="text-center">2023-11-01 09:20:08</div></td><td><div class="text-center"><div class="text-center"><span class="badge outline-badge-info mb-2 me-4">카드</span></div></div></td><td><div class="text-center">카페라떼</div></td><td><div class="text-center">2,900원</div></td><td><div class="text-center"><span class="badge badge-info mb-2 me-4">구입완료</span></div></td></tr><tr role="row"><td class="sorting_1"><div class="text-center">3</div></td><td><div class="text-center">휴(HEW)</div></td><td><div class="text-center">ecm0100</div></td><td><div class="text-center">2023-11-01 09:17:16</div></td><td><div class="text-center"><div class="text-center"><span class="badge outline-badge-info mb-2 me-4">카드</span></div></div></td><td><div class="text-center">연한 아메리카노(싱글) +1</div></td><td><div class="text-center">4,400원</div></td><td><div class="text-center"><span class="badge badge-info mb-2 me-4">구입완료</span></div></td></tr><tr role="row"><td class="sorting_1"><div class="text-center">2</div></td><td><div class="text-center">휴(HEW)</div></td><td><div class="text-center">ecm0100</div></td><td><div class="text-center">2023-11-01 08:54:43</div></td><td><div class="text-center"><div class="text-center"><span class="badge outline-badge-info mb-2 me-4">카드</span></div></div></td><td><div class="text-center">연한아이스 아메리카노(싱글) +2</div></td><td><div class="text-center">7,500원</div></td><td><div class="text-center"><span class="badge badge-info mb-2 me-4">구입완료</span></div></td></tr><tr role="row"><td class="sorting_1"><div class="text-center">1</div></td><td><div class="text-center">휴(HEW)</div></td><td><div class="text-center">ecm0100</div></td><td><div class="text-center">2023-11-01 07:13:40</div></td><td><div class="text-center"><div class="text-center"><span class="badge outline-badge-info mb-2 me-4">카드</span></div></div></td><td><div class="text-center">연한 아메리카노(싱글)</div></td><td><div class="text-center">2,200원</div></td><td><div class="text-center"><span class="badge badge-info mb-2 me-4">구입완료</span></div></td></tr><tr role="row"><td class="sorting_1"><div class="text-center">0</div></td><td><div class="text-center">휴(HEW)</div></td><td><div class="text-center">ecm0100</div></td><td><div class="text-center">2023-11-01 06:03:46</div></td><td><div class="text-center"><div class="text-center"><span class="badge outline-badge-info mb-2 me-4">카드</span></div></div></td><td><div class="text-center">진한 카페라떼 +1</div></td><td><div class="text-center">6,000원</div></td><td><div class="text-center"><span class="badge badge-info mb-2 me-4">구입완료</span></div></td></tr>
+                            <tfoot>
+                                <tr><th class="text-center" rowspan="1" colspan="1">#</th><th class="text-center" rowspan="1" colspan="1">매장</th><th class="text-center" rowspan="1" colspan="1">기기</th><th class="text-center" rowspan="1" colspan="1">일자</th><th class="text-center" rowspan="1" colspan="1">결제</th><th class="text-center" rowspan="1" colspan="1">매출 상품</th><th class="text-center" rowspan="1" colspan="1">실 결제 금액</th><th class="text-center" rowspan="1" colspan="1">상태</th></tr>
+                            </tfoot>
+                        </table><div id="branch-config_processing" class="dataTables_processing card" style="display: none;">Processing...</div></div><div class="dt--bottom-section d-sm-flex justify-content-sm-between text-center"><div class="dt--pages-count  mb-sm-0 mb-3"><div class="dataTables_info" id="branch-config_info" role="status" aria-live="polite">1 / 1</div></div><div class="dt--pagination"><div class="dataTables_paginate paging_simple_numbers" id="branch-config_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="branch-config_previous"><a href="#" aria-controls="branch-config" data-dt-idx="0" tabindex="0" class="page-link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg></a></li><li class="paginate_button page-item active"><a href="#" aria-controls="branch-config" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item next disabled" id="branch-config_next"><a href="#" aria-controls="branch-config" data-dt-idx="2" tabindex="0" class="page-link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a></li></ul></div></div></div></div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div>
+                    <div class="modal fade" id="product_view_model" tabindex="-1" role="dialog" aria-labelledby="product_view_model_title" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="product_view_model_title">결제 정보</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                    </button>
+                                </div>
+                                <div class="modal-body" id="view_modal_body">
+                                    <div id="invoice-POS">
+                                        <center id="top">
+                                            <div class="info">
+                                                <h1><b id="products_view_name">카페일분 XX점</b></h1>
+                                                <h2 id="products_view_company"></h2>
+                                            </div>
+                                        </center>
+                                        <br>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-5 col-form-label">&nbsp;주문</label>
+                                            <div class="col-sm-7 col-form-label text-info" id="products_view_product_list">
+                                                아이스아메리카노<br>머머머머머머<br>머머머머머머<br>머머머머머머<br>머머머머머머
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-5 col-form-label">&nbsp;연락처</label>
+                                            <div class="col-sm-7 col-form-label text-info" id="products_view_phone">
+                                                012-3456-7890
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-5 col-form-label">&nbsp;총 구매액</label>
+                                            <div class="col-sm-7 col-form-label" id="products_view_pay_money">
+                                                4,400원
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-5 col-form-label">&nbsp;과세물품가액</label>
+                                            <div class="col-sm-7 col-form-label" id="products_view_pay_origin_money">
+                                                4,000원
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-5 col-form-label">&nbsp;부가세</label>
+                                            <div class="col-sm-7 col-form-label" id="products_view_pay_tax_money">
+                                                400원
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-5 col-form-label">&nbsp;결제일자</label>
+                                            <div class="col-sm-7 col-form-label" id="products_view_c_date">
+                                                2022-09-26 00:00:00
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row mb-3">
+                                            <label class="col-sm-5 col-form-label">&nbsp;결제수단</label>
+                                            <div class="col-sm-7 col-form-label">
+                                                <span class="badge outline-badge-warning mb-2 me-4" id="products_view_type">카드</span>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-5 col-form-label">&nbsp;승인일자</label>
+                                            <div class="col-sm-7 col-form-label" id="products_view_a_date">
+                                                20220926123456
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-5 col-form-label">&nbsp;승인번호</label>
+                                            <div class="col-sm-7 col-form-label" id="products_view_approve_number">
+                                                33333333
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-5 col-form-label">&nbsp;카드번호</label>
+                                            <div class="col-sm-7 col-form-label" id="products_view_creditcard">
+                                                012345******1234
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-5 col-form-label">&nbsp;상태</label>
+                                            <div class="col-sm-7 col-form-label" id="products_status">
+                                            </div>
+                                        </div>
+                                        <p id="mid">
+                                        </p>
+                                        <br>
+                                        <br>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-5 col-form-label">&nbsp;상호명</label>
+                                            <div class="col-sm-7 col-form-label" id="company_name">
+                                                주식회사 민성
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-5 col-form-label">&nbsp;사업자번호</label>
+                                            <div class="col-sm-7 col-form-label" id="company_number">
+                                                000-000-0000
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-5 col-form-label">&nbsp;사업장주소</label>
+                                            <div class="col-sm-7 col-form-label" id="company_path">
+                                                서울특별시 강남구 테헤란로 000 00빌딩 00층
+                                            </div>
+                                        </div>
+                                        <center id="bot">
+                                        </center>
+                                    </div>
+                                    <button class="btn btn-light-primary col-sm-12 mb-4" style="height:50px;" id="view_img_capture">영수증 저장</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--  BEGIN FOOTER  -->
+    <div class="footer-wrapper">
+        <div class="footer-section f-section-1">
+            <p>- 에러 제보 - 제보 할 때 매장명, 기기번호, 매출 시간, 현상, 동영상을 첨부하면 분석이 쉽습니다. manager@order-app.us</p>
+            <!-- <p class="">Copyright © <span class="dynamic-year">2022</span> 민성, All rights reserved.</p> -->
+        </div>
+    </div>
+    <!--  END FOOTER  -->
+</div>
+<!--  END CONTENT AREA  -->
+
+</div>
+<script src="https://euro.order-app.us/static/assets/js/html2canvas.js"></script>
+<script src="https://euro.order-app.us/static/assets/js/slave/sales.js?v=231012005"></script>
+
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+    <script src="https://euro.order-app.us/static/layouts/vertical-light-menu/app.js"></script>
+    <script src="https://euro.order-app.us/static/src/plugins/src/apex/apexcharts.min.js"></script>
+    <script src="https://euro.order-app.us/static/src/assets/js/custom.js"></script>
+    <script src="https://euro.order-app.us/static/src/plugins/src/table/datatable/datatables.js"></script>
+    <script src="https://euro.order-app.us/static/src/plugins/src/flatpickr/flatpickr.js"></script>
+    <script src="https://euro.order-app.us/static/assets/js/base.js"></script>
+    <!-- BEGIN PAGE LEVEL PLUGINS/CUSTOM SCRIPTS -->
+
+<svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg><div class="flatpickr-calendar animate" tabindex="-1"><div class="flatpickr-months"><span class="flatpickr-prev-month"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17"><g></g><path d="M5.207 8.471l7.146 7.147-0.707 0.707-7.853-7.854 7.854-7.853 0.707 0.707-7.147 7.146z"></path></svg></span><div class="flatpickr-month"><div class="flatpickr-current-month"><select class="flatpickr-monthDropdown-months" tabindex="-1"><option class="flatpickr-monthDropdown-month" value="0" tabindex="-1">January</option><option class="flatpickr-monthDropdown-month" value="1" tabindex="-1">February</option><option class="flatpickr-monthDropdown-month" value="2" tabindex="-1">March</option><option class="flatpickr-monthDropdown-month" value="3" tabindex="-1">April</option><option class="flatpickr-monthDropdown-month" value="4" tabindex="-1">May</option><option class="flatpickr-monthDropdown-month" value="5" tabindex="-1">June</option><option class="flatpickr-monthDropdown-month" value="6" tabindex="-1">July</option><option class="flatpickr-monthDropdown-month" value="7" tabindex="-1">August</option><option class="flatpickr-monthDropdown-month" value="8" tabindex="-1">September</option><option class="flatpickr-monthDropdown-month" value="9" tabindex="-1">October</option><option class="flatpickr-monthDropdown-month" value="10" tabindex="-1">November</option><option class="flatpickr-monthDropdown-month" value="11" tabindex="-1">December</option></select><div class="numInputWrapper"><input class="numInput cur-year" type="number" tabindex="-1" aria-label="Year"><span class="arrowUp"></span><span class="arrowDown"></span></div></div></div><span class="flatpickr-next-month"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17"><g></g><path d="M13.207 8.472l-7.854 7.854-0.707-0.707 7.146-7.146-7.146-7.148 0.707-0.707 7.854 7.854z"></path></svg></span></div><div class="flatpickr-innerContainer"><div class="flatpickr-rContainer"><div class="flatpickr-weekdays"><div class="flatpickr-weekdaycontainer">
+  <span class="flatpickr-weekday">
+    Sun</span><span class="flatpickr-weekday">Mon</span><span class="flatpickr-weekday">Tue</span><span class="flatpickr-weekday">Wed</span><span class="flatpickr-weekday">Thu</span><span class="flatpickr-weekday">Fri</span><span class="flatpickr-weekday">Sat
+  </span>
+  </div></div><div class="flatpickr-days" tabindex="-1"><div class="dayContainer"><span class="flatpickr-day prevMonthDay" aria-label="October 29, 2023" tabindex="-1">29</span><span class="flatpickr-day prevMonthDay" aria-label="October 30, 2023" tabindex="-1">30</span><span class="flatpickr-day prevMonthDay" aria-label="October 31, 2023" tabindex="-1">31</span><span class="flatpickr-day " aria-label="November 1, 2023" tabindex="-1">1</span><span class="flatpickr-day today" aria-label="November 2, 2023" aria-current="date" tabindex="-1">2</span><span class="flatpickr-day " aria-label="November 3, 2023" tabindex="-1">3</span><span class="flatpickr-day " aria-label="November 4, 2023" tabindex="-1">4</span><span class="flatpickr-day " aria-label="November 5, 2023" tabindex="-1">5</span><span class="flatpickr-day " aria-label="November 6, 2023" tabindex="-1">6</span><span class="flatpickr-day " aria-label="November 7, 2023" tabindex="-1">7</span><span class="flatpickr-day " aria-label="November 8, 2023" tabindex="-1">8</span><span class="flatpickr-day " aria-label="November 9, 2023" tabindex="-1">9</span><span class="flatpickr-day " aria-label="November 10, 2023" tabindex="-1">10</span><span class="flatpickr-day " aria-label="November 11, 2023" tabindex="-1">11</span><span class="flatpickr-day " aria-label="November 12, 2023" tabindex="-1">12</span><span class="flatpickr-day " aria-label="November 13, 2023" tabindex="-1">13</span><span class="flatpickr-day " aria-label="November 14, 2023" tabindex="-1">14</span><span class="flatpickr-day " aria-label="November 15, 2023" tabindex="-1">15</span><span class="flatpickr-day " aria-label="November 16, 2023" tabindex="-1">16</span><span class="flatpickr-day " aria-label="November 17, 2023" tabindex="-1">17</span><span class="flatpickr-day " aria-label="November 18, 2023" tabindex="-1">18</span><span class="flatpickr-day " aria-label="November 19, 2023" tabindex="-1">19</span><span class="flatpickr-day " aria-label="November 20, 2023" tabindex="-1">20</span><span class="flatpickr-day " aria-label="November 21, 2023" tabindex="-1">21</span><span class="flatpickr-day " aria-label="November 22, 2023" tabindex="-1">22</span><span class="flatpickr-day " aria-label="November 23, 2023" tabindex="-1">23</span><span class="flatpickr-day " aria-label="November 24, 2023" tabindex="-1">24</span><span class="flatpickr-day " aria-label="November 25, 2023" tabindex="-1">25</span><span class="flatpickr-day " aria-label="November 26, 2023" tabindex="-1">26</span><span class="flatpickr-day " aria-label="November 27, 2023" tabindex="-1">27</span><span class="flatpickr-day " aria-label="November 28, 2023" tabindex="-1">28</span><span class="flatpickr-day " aria-label="November 29, 2023" tabindex="-1">29</span><span class="flatpickr-day " aria-label="November 30, 2023" tabindex="-1">30</span><span class="flatpickr-day nextMonthDay" aria-label="December 1, 2023" tabindex="-1">1</span><span class="flatpickr-day nextMonthDay" aria-label="December 2, 2023" tabindex="-1">2</span><span class="flatpickr-day nextMonthDay" aria-label="December 3, 2023" tabindex="-1">3</span><span class="flatpickr-day nextMonthDay" aria-label="December 4, 2023" tabindex="-1">4</span><span class="flatpickr-day nextMonthDay" aria-label="December 5, 2023" tabindex="-1">5</span><span class="flatpickr-day nextMonthDay" aria-label="December 6, 2023" tabindex="-1">6</span><span class="flatpickr-day nextMonthDay" aria-label="December 7, 2023" tabindex="-1">7</span><span class="flatpickr-day nextMonthDay" aria-label="December 8, 2023" tabindex="-1">8</span><span class="flatpickr-day nextMonthDay" aria-label="December 9, 2023" tabindex="-1">9</span></div></div></div></div></div><div class="flatpickr-calendar animate" tabindex="-1"><div class="flatpickr-months"><span class="flatpickr-prev-month"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17"><g></g><path d="M5.207 8.471l7.146 7.147-0.707 0.707-7.853-7.854 7.854-7.853 0.707 0.707-7.147 7.146z"></path></svg></span><div class="flatpickr-month"><div class="flatpickr-current-month"><select class="flatpickr-monthDropdown-months" tabindex="-1"><option class="flatpickr-monthDropdown-month" value="0" tabindex="-1">January</option><option class="flatpickr-monthDropdown-month" value="1" tabindex="-1">February</option><option class="flatpickr-monthDropdown-month" value="2" tabindex="-1">March</option><option class="flatpickr-monthDropdown-month" value="3" tabindex="-1">April</option><option class="flatpickr-monthDropdown-month" value="4" tabindex="-1">May</option><option class="flatpickr-monthDropdown-month" value="5" tabindex="-1">June</option><option class="flatpickr-monthDropdown-month" value="6" tabindex="-1">July</option><option class="flatpickr-monthDropdown-month" value="7" tabindex="-1">August</option><option class="flatpickr-monthDropdown-month" value="8" tabindex="-1">September</option><option class="flatpickr-monthDropdown-month" value="9" tabindex="-1">October</option><option class="flatpickr-monthDropdown-month" value="10" tabindex="-1">November</option><option class="flatpickr-monthDropdown-month" value="11" tabindex="-1">December</option></select><div class="numInputWrapper"><input class="numInput cur-year" type="number" tabindex="-1" aria-label="Year"><span class="arrowUp"></span><span class="arrowDown"></span></div></div></div><span class="flatpickr-next-month"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17"><g></g><path d="M13.207 8.472l-7.854 7.854-0.707-0.707 7.146-7.146-7.146-7.148 0.707-0.707 7.854 7.854z"></path></svg></span></div><div class="flatpickr-innerContainer"><div class="flatpickr-rContainer"><div class="flatpickr-weekdays"><div class="flatpickr-weekdaycontainer">
+  <span class="flatpickr-weekday">
+    Sun</span><span class="flatpickr-weekday">Mon</span><span class="flatpickr-weekday">Tue</span><span class="flatpickr-weekday">Wed</span><span class="flatpickr-weekday">Thu</span><span class="flatpickr-weekday">Fri</span><span class="flatpickr-weekday">Sat
+  </span>
+  </div></div><div class="flatpickr-days" tabindex="-1"><div class="dayContainer"><span class="flatpickr-day prevMonthDay" aria-label="October 29, 2023" tabindex="-1">29</span><span class="flatpickr-day prevMonthDay" aria-label="October 30, 2023" tabindex="-1">30</span><span class="flatpickr-day prevMonthDay" aria-label="October 31, 2023" tabindex="-1">31</span><span class="flatpickr-day " aria-label="November 1, 2023" tabindex="-1">1</span><span class="flatpickr-day today" aria-label="November 2, 2023" aria-current="date" tabindex="-1">2</span><span class="flatpickr-day " aria-label="November 3, 2023" tabindex="-1">3</span><span class="flatpickr-day " aria-label="November 4, 2023" tabindex="-1">4</span><span class="flatpickr-day " aria-label="November 5, 2023" tabindex="-1">5</span><span class="flatpickr-day " aria-label="November 6, 2023" tabindex="-1">6</span><span class="flatpickr-day " aria-label="November 7, 2023" tabindex="-1">7</span><span class="flatpickr-day " aria-label="November 8, 2023" tabindex="-1">8</span><span class="flatpickr-day " aria-label="November 9, 2023" tabindex="-1">9</span><span class="flatpickr-day " aria-label="November 10, 2023" tabindex="-1">10</span><span class="flatpickr-day " aria-label="November 11, 2023" tabindex="-1">11</span><span class="flatpickr-day " aria-label="November 12, 2023" tabindex="-1">12</span><span class="flatpickr-day " aria-label="November 13, 2023" tabindex="-1">13</span><span class="flatpickr-day " aria-label="November 14, 2023" tabindex="-1">14</span><span class="flatpickr-day " aria-label="November 15, 2023" tabindex="-1">15</span><span class="flatpickr-day " aria-label="November 16, 2023" tabindex="-1">16</span><span class="flatpickr-day " aria-label="November 17, 2023" tabindex="-1">17</span><span class="flatpickr-day " aria-label="November 18, 2023" tabindex="-1">18</span><span class="flatpickr-day " aria-label="November 19, 2023" tabindex="-1">19</span><span class="flatpickr-day " aria-label="November 20, 2023" tabindex="-1">20</span><span class="flatpickr-day " aria-label="November 21, 2023" tabindex="-1">21</span><span class="flatpickr-day " aria-label="November 22, 2023" tabindex="-1">22</span><span class="flatpickr-day " aria-label="November 23, 2023" tabindex="-1">23</span><span class="flatpickr-day " aria-label="November 24, 2023" tabindex="-1">24</span><span class="flatpickr-day " aria-label="November 25, 2023" tabindex="-1">25</span><span class="flatpickr-day " aria-label="November 26, 2023" tabindex="-1">26</span><span class="flatpickr-day " aria-label="November 27, 2023" tabindex="-1">27</span><span class="flatpickr-day " aria-label="November 28, 2023" tabindex="-1">28</span><span class="flatpickr-day " aria-label="November 29, 2023" tabindex="-1">29</span><span class="flatpickr-day " aria-label="November 30, 2023" tabindex="-1">30</span><span class="flatpickr-day nextMonthDay" aria-label="December 1, 2023" tabindex="-1">1</span><span class="flatpickr-day nextMonthDay" aria-label="December 2, 2023" tabindex="-1">2</span><span class="flatpickr-day nextMonthDay" aria-label="December 3, 2023" tabindex="-1">3</span><span class="flatpickr-day nextMonthDay" aria-label="December 4, 2023" tabindex="-1">4</span><span class="flatpickr-day nextMonthDay" aria-label="December 5, 2023" tabindex="-1">5</span><span class="flatpickr-day nextMonthDay" aria-label="December 6, 2023" tabindex="-1">6</span><span class="flatpickr-day nextMonthDay" aria-label="December 7, 2023" tabindex="-1">7</span><span class="flatpickr-day nextMonthDay" aria-label="December 8, 2023" tabindex="-1">8</span><span class="flatpickr-day nextMonthDay" aria-label="December 9, 2023" tabindex="-1">9</span></div></div></div></div></div></body></html>
